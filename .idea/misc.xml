@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Jamshid/AndroidStudioProjects/contact-examle-for-bootcamp/app/src/main/res/layout/activity_main.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/Jamshid/AndroidStudioProjects/contact-examle-for-bootcamp/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
+        <entry key="..\:/Users/Jamshid/AndroidStudioProjects/contact-examle-for-bootcamp/app/src/main/res/layout/screen_splash.xml" value="0.176" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20244565217391305" />
       </map>
     </option>
