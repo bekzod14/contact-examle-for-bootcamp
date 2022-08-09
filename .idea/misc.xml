@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Memory/Android Develop/contact-examle-for-bootcamp2/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Memory/Android Develop/contact-examle-for-bootcamp2/app/src/main/res/layout/item_contact.xml" value="0.358695652173913" />
+        <entry key="..\:/Memory/Android Develop/contact-examle-for-bootcamp2/app/src/main/res/layout/screen_main.xml" value="0.33" />
+        <entry key="..\:/Memory/Android Develop/contact-examle-for-bootcamp2/app/src/main/res/layout/screen_splash.xml" value="0.358695652173913" />
         <entry key="app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1555" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20244565217391305" />
         <entry key="app/src/main/res/layout/contact_item.xml" value="0.20153985507246377" />
