@@ -22,10 +22,18 @@
         <action
             android:id="@+id/action_mainScreen_to_addContactScreen"
             app:destination="@id/addContactScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_infoScreen"
+            app:destination="@id/infoScreen" />
     </fragment>
     <fragment
         tools:layout="@layout/screen_add_contact"
         android:id="@+id/addContactScreen"
         android:name="uz.gita.contactexample.ui.screen.AddContactScreen"
         android:label="AddContactScreen" />
+    <fragment
+        tools:layout="@layout/screen_info"
+        android:id="@+id/infoScreen"
+        android:name="uz.gita.contactexample.ui.screen.InfoScreen"
+        android:label="InfoScreen" />
 </navigation>

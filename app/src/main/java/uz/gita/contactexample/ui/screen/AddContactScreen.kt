@@ -15,7 +15,7 @@ import uz.gita.contactexample.utils.selectOrUnselect
 
 class AddContactScreen : Fragment(R.layout.screen_add_contact){
     private val viewModel : AddContactViewModel by viewModels<AddContactViewModelImpl>()
-    private val navController = findNavController()
+    private val navController by lazy { findNavController() }
     private lateinit var inputName :EditText
     private lateinit var inputPhone :EditText
     private lateinit var imgMan : ImageView
@@ -27,7 +27,7 @@ class AddContactScreen : Fragment(R.layout.screen_add_contact){
         super.onCreate(savedInstanceState)
 
         viewModel.backLiveData.observe(this){
-            navController.popBackStack()
+            navController.navigateUp()
         }
 
         viewModel.messageLiveData.observe(this) {

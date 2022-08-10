@@ -35,7 +35,7 @@ class MainScreen : Fragment(R.layout.screen_main) {
         }
 
         viewModel.openInfoLiveData.observe(this) {
-
+           navController.navigate(MainScreenDirections.actionMainScreenToInfoScreen())
         }
 
         viewModel.openEditLiveData.observe(this) {
