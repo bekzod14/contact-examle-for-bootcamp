@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import uz.gita.contactexample.R
 import uz.gita.contactexample.data.model.ContactData
+import uz.gita.contactexample.utils.getDrawableResId
 
 
 class ContactAdapter : ListAdapter<ContactData, ContactAdapter.ViewHolder>(Callback) {
@@ -45,7 +46,7 @@ class ContactAdapter : ListAdapter<ContactData, ContactAdapter.ViewHolder>(Callb
 
     }
 
-    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val name: TextView = view.findViewById(R.id.txtNameContact)
         val number: TextView = view.findViewById(R.id.txtNumberContact)
         val img: ImageView = view.findViewById(R.id.imgContact)
@@ -56,7 +57,7 @@ class ContactAdapter : ListAdapter<ContactData, ContactAdapter.ViewHolder>(Callb
             val item = getItem(adapterPosition)
             name.text = item.name
             number.text = item.number
-            img.setImageResource(item.image)
+            img.setImageResource(getDrawableResId(view.context, item.image))
         }
 
         init {
