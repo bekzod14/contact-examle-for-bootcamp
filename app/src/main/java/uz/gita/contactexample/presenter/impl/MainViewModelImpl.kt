@@ -2,11 +2,12 @@ package uz.gita.contactexample.presenter.impl
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import uz.gita.contactexample.data.model.ContactData
 import uz.gita.contactexample.presenter.MainViewModel
 import uz.gita.contactexample.repository.Repository
 
-class MainViewModelImpl : MainViewModel {
+class MainViewModelImpl : MainViewModel, ViewModel() {
 
     private val repository = Repository
 
