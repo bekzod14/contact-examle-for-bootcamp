@@ -31,7 +31,7 @@ class MainScreen : Fragment(R.layout.screen_main) {
 
 
         viewModel.openAddContactLiveData.observe(this) {
-
+            navController.navigate(MainScreenDirections.actionMainScreenToAddContactScreen())
         }
 
         viewModel.openInfoLiveData.observe(this) {

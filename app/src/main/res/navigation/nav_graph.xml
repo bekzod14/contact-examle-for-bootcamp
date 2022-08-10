@@ -18,5 +18,14 @@
         tools:layout="@layout/screen_main"
         android:id="@+id/mainScreen"
         android:name="uz.gita.contactexample.ui.screen.MainScreen"
-        android:label="MainScreen" />
+        android:label="MainScreen" >
+        <action
+            android:id="@+id/action_mainScreen_to_addContactScreen"
+            app:destination="@id/addContactScreen" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_add_contact"
+        android:id="@+id/addContactScreen"
+        android:name="uz.gita.contactexample.ui.screen.AddContactScreen"
+        android:label="AddContactScreen" />
 </navigation>
